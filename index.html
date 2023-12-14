@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Casino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Casino</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Slot Machines</h2>
+            <p>Try your luck with our exciting slot machines!</p>
+            <button onclick="spinSlot()">Spin the Slot</button>
+            <div id="slotResult"></div>
+        </section>
+
+        <section>
+            <h2>Roulette</h2>
+            <p>Take a chance with our roulette wheel!</p>
+            <button onclick="spinRoulette()">Spin the Roulette</button>
+            <div id="rouletteResult"></div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 My Casino. All rights reserved.
+    </footer>
+
+    <script>
+        function spinSlot() {
+            // Add slot machine logic here
+            document.getElementById('slotResult').innerHTML = 'You won 10 coins!';
+        }
+
+        function spinRoulette() {
+            // Add roulette logic here
+            document.getElementById('rouletteResult').innerHTML = 'Lucky number: 7';
+        }
+    </script>
+
+</body>
+</html>
